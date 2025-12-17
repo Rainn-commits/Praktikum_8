@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Program JavaScript - TIF FT UNIPMA</title>
+    <script>
+        function test() {
+            var val1 = window.prompt("Input Nilai (1-5):");
+
+            switch (val1) {
+                case "1":
+                    document.write("Bilangan Satu");
+                    break;
+                case "2":
+                    document.write("Bilangan Dua");
+                    break;
+                case "3":
+                    document.write("Bilangan Tiga");
+                    break;
+                case "4":
+                    document.write("Bilangan Empat");
+                    break;
+                case "5":
+                    document.write("Bilangan Lima");
+                    break;
+                default:
+                    document.write("Bilangan lainnya..");
+            }
+        }
+
+        function looping() {
+            for (var x = 0; x <= 10; x++) {
+                document.write(x + "<br>");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Switch Case" onclick="test()">
+    <br><br>
+    <input type="button" value="For Loop" onclick="looping()">
+</body>
+</html>

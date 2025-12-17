@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Program JavaScript - TIF FT UNIPMA</title>
+
+    <script>
+        function test() {
+            var val1 = document.kirim.T1.value;
+
+            if (val1 % 2 == 0)
+                document.kirim.T2.value = "Bilangan Genap";
+            else
+                document.kirim.T2.value = "Bilangan Ganjil";
+        }
+
+        function ubahWarnaLB(warna) {
+            document.bgColor = warna;
+        }
+
+        function ubahWarnaLD(warna) {
+            document.fgColor = warna;
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>Cek Bilangan</h2>
+<form name="kirim">
+    <p>
+        BIL <input type="text" name="T1" size="20">
+        MERUPAKAN BIL <input type="text" name="T2" size="20">
+    </p>
+    <p>
+        <input type="button" value="TEBAK" onclick="test()">
+    </p>
+</form>
+
+<hr>
+
+<h2>Ubah Warna</h2>
+<form>
+    <input type="button" value="Latar Belakang Hijau" onclick="ubahWarnaLB('green')">
+    <input type="button" value="Latar Belakang Putih" onclick="ubahWarnaLB('white')">
+    <br><br>
+    <input type="button" value="Teks Kuning" onclick="ubahWarnaLD('yellow')">
+    <input type="button" value="Teks Biru" onclick="ubahWarnaLD('blue')">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Program JavaScript - TIF FT UNIPMA</title>
+
+    <script>
+        // Program Relational
+        function test() {
+            var val1 = prompt("Nilai I:");
+            var val2 = prompt("Nilai II:");
+
+            document.write("<br>val1 == val2<br>");
+            document.write(val1 == val2);
+
+            document.write("<br><br>val1 != val2<br>");
+            document.write(val1 != val2);
+
+            document.write("<br><br>val1 > val2<br>");
+            document.write(val1 > val2);
+
+            document.write("<br><br>val1 < val2<br>");
+            document.write(val1 < val2);
+        }
+        
+        function cekNilai() {
+            var nilai = prompt("Nilai (0-100):", 0);
+            var hasil = "";
+
+            if (nilai >= 60)
+                hasil = "Lulus";
+            else
+                hasil = "Tidak Lulus";
+
+            document.write("<br><br>Hasil: " + hasil);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Relational" onclick="test()">
+    <br><br>
+    <input type="button" value="If Else" onclick="cekNilai()">
+</body>
+</html>
